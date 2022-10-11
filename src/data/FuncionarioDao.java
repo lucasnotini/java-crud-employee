@@ -23,7 +23,7 @@ public class FuncionarioDao {
             //indico qual vai ser a Classe ponte/driver que está no com.mysql.jdbc.Driver (java database connector)
             Class.forName("com.mysql.cj.jdbc.Driver");
             //uso classe que faz a conexão (passo caminho do banco, usuario e senha) e guardo no objeto conn
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/banco", "root", "");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/banco", "root", "notini");
             return true;
         
         //multicatch para o ClassNotFoundException (caso driver não esteja na biblioteca) e para o SQLException 
